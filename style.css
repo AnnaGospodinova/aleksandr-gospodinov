@@ -1,0 +1,593 @@
+body {
+	background: #fff;
+	font-family: 'opensans-regular', sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 30px;
+	 color: #ffffff;
+	 margin: 0;
+}
+
+header {
+	position: relative;
+	height: 1000px;
+	min-height: 500px;
+	width: 100%;
+	background: #bee2f3da url(img/header-background.jpg) no-repeat top center;
+	background-size: cover !important;
+	 -webkit-background-size: cover !important;
+	text-align: center;
+	overflow: hidden;
+	display: block;
+}
+
+/*Верхнее меню*/
+
+#nav-wrap > a.mobile-btn { display: none; }
+
+#nav-wrap {
+	font: 12px 'opensans-bold', sans-serif;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	margin: 0 auto;
+	z-index: 100;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #4b6d9b;
+	height: 50px;
+}
+
+ul#nav {
+	min-height: 38px;
+	width: auto;
+	text-align: center;
+}
+
+ul#nav li {
+	position: relative;
+	list-style: none;
+	height: 38px;
+	display: inline-block;
+}
+
+ul#nav li a {
+	display: inline-block;
+	padding: 3px 30px;
+	line-height: 22px;
+	 text-decoration: none;
+	text-align: left;
+	color: #fff;
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+/* Баннер с именем и описанием */
+
+header .banner {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 auto;
+	width: 85%;
+	padding-bottom: 30px;
+	padding-top: 180px;
+	text-align: center;
+}
+
+header .banner-text {
+	width: 100%;
+}
+
+header .banner-text h1 {
+	font: 90px 'opensans-bold', sans-serif;
+	color: #fff;
+	letter-spacing: 1px;
+	margin: 0 auto 18px auto;
+	padding-bottom: 40px;
+	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+header .banner-text h3 {
+	font: 24px 'librebaskerville-regular', serif;
+	color: #ffffff;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	width: 50%;
+	line-height: 35px;
+}
+
+/* Раздел обо мне */
+
+#about {
+	background: #71a5d4;
+	padding-top: 96px;
+	padding-bottom: 76px;
+	overflow: hidden;
+}
+
+#about h2 {
+	font: 30px 'opensasn-bold', sans-serif;
+	color: #fff;
+	margin-bottom: 12px;
+}
+
+#about p {
+	line-height: 30px;
+	color: #ffffff;
+}
+
+.wrap {
+	display: flex;
+	flex-direction: row;
+}
+
+.wrap .profile-image {
+	width: 20%;
+	padding: 80px 30px 30px 30px;
+}
+
+.block {
+	position: relative;
+	padding: 10px 20px;
+	min-height: 1px;
+}
+
+#about .profile-pic {
+	position: relative;
+	width: 210px;
+	height: 280px;
+	border-radius: 15px;
+	box-shadow: 0 5px 20px 3px #000;
+}
+
+.wrap .information {
+	width: 75%;
+}
+
+
+#about .contact-details {
+	width: 41%;
+}
+
+
+.button {
+	position: relative;
+	display: inline-block;
+	font-size: 90%;
+	font-weight: 700;
+	color: rgb(252, 252, 252);
+	text-decoration: none;
+	text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+	padding: .5em 1em;
+	outline: none;
+	border-radius: 3px;
+	background: linear-gradient(rgb(106, 172, 233), rgb(91, 165, 235)) rgb(110, 186, 236);
+	box-shadow: 0 1px rgba(117, 204, 238, 0.418) inset,
+	0 3px 5px rgba(102, 197, 235, 0.5),
+	0 0 1px 1px rgba(123, 204, 224, 0.2);
+   transition: .2s ease-in-out;
+}
+
+.button:hover:not(:active) {
+	background: linear-gradient(rgb(63, 144, 236), rgb(54, 152, 233)) rgb(50, 105, 207);
+}
+
+.button:active {
+  top: 1px;
+  background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+  box-shadow:
+   0 0 1px rgba(0,0,0,.5) inset,
+   0 2px 3px rgba(0,0,0,.5) inset,
+   0 1px 1px rgba(255,255,255,.1);
+}
+
+.wrap {
+	width: 96%;
+	max-width: 1020px;
+	margin: 0 auto;
+}
+
+/* Резюме (пока только навыки) */
+
+#resume {
+	background: #679FD2;
+	padding-top: 80px;
+	padding-bottom: 72px; 
+	overflow: hidden;
+}
+
+.skill {
+	width: 96%;
+	max-width: 1020px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.header-col {
+	padding-top: 9px;
+	width: 20%;
+	position: relative;
+	padding: 0 20px;
+	min-height: 1px;
+}
+
+#resume .main-col {
+	padding-right: 10%;
+	width: 70%;
+	position: relative;
+	padding: 0 20px;
+	min-height: 1px;
+}
+
+#resume p {
+	margin: 20px 0 30px 0;
+}
+
+#resume h1 span {
+	border-bottom: 3px solid #88888d;
+	padding-bottom: 6px;
+}
+
+.bars {
+	width: 95%;
+	float: left;
+	padding: 0;
+	text-align: left;
+
+}
+
+.bars .skills {
+	margin-top: 36px;
+	list-style: none;
+	margin-bottom: 24px;
+}
+
+.bars li {
+	position: relative;
+	margin-bottom: 60px;
+	background: #ccc;
+	height: 42px;
+	border-radius: 3px;
+}
+
+.bar-expand {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding-right: 24px;
+	background: #313131;
+	display: inline-block;
+	height: 42px;
+	line-height: 42px;
+	border-radius: 3px 0 0 3px;
+}
+
+.unity {
+	width: 30%;
+	-moz-animation: unity 2s ease;
+  	-webkit-animation: unity 2s ease;
+}
+
+.ccc {
+	width: 40%;
+	-moz-animation: ccc 2s ease;
+  	-webkit-animation: ccc 2s ease;
+}
+
+.vs {
+	width: 60%;
+	-moz-animation: vs 2s ease;
+  	-webkit-animation: vs 2s ease;
+}
+
+.bitbucket {
+	width: 70%;
+	-moz-animation: bitbucket 2s ease;
+  	-webkit-animation: bitbucket 2s ease;
+}
+
+.google {
+	width: 50%;
+	-moz-animation: google 2s ease;
+  	-webkit-animation: google 2s ease;
+}
+
+.git {
+	width: 40%;
+	-moz-animation: git 2s ease;
+  	-webkit-animation: git 2s ease;
+}
+
+@-moz-keyframes unity {
+	0%   { width: 0px;  }
+	100% { width: 30%;  }
+}
+@-moz-keyframes ccc {
+	0%   { width: 0px;  }
+	100% { width: 40%;  }
+}
+@-moz-keyframes vs {
+	0%   { width: 0px;  }
+	100% { width: 60%;  }
+}
+@-moz-keyframes bitbucket {
+	0%   { width: 0px;  }
+	100% { width: 70%;  }
+}
+@-moz-keyframes google {
+	0%   { width: 0px;  }
+	100% { width: 50%;  }
+}
+@-moz-keyframes git {
+	0%   { width: 0px;  }
+	100% { width: 40%;  }
+}
+@-webkit-keyframes unity {
+	0%   { width: 0px;  }
+	100% { width: 30%;  }
+}
+@-webkit-keyframes ccc {
+	0%   { width: 0px;  }
+	100% { width: 40%;  }
+}
+@-webkit-keyframes vs {
+	0%   { width: 0px;  }
+	100% { width: 60%;  }
+}
+@-webkit-keyframes bitbucket {
+	0%   { width: 0px;  }
+	100% { width: 70%;  }
+}
+@-webkit-keyframes google {
+	0%   { width: 0px;  }
+	100% { width: 50%;  }
+}
+
+@-webkit-keyframes git {
+	0%   { width: 0px;  }
+	100% { width: 40%;  }
+}
+
+.bars li em {
+	font: 15px 'opensans-bold', sans-serif;
+	color: #313131;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: normal;
+	position: relative;
+	top: -36px;
+}
+
+/* Работы*/
+	
+#portfolio {
+	background: #4b6d9b;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	height: 100%;
+}
+
+#portfolio .projects  h1 {
+	text-align: center;
+	font-size: 45px;
+}
+ 
+.image-game {
+	width: 400px;
+	height: 280px;
+	display: block;
+	position: relative;
+	transition: all 0.2s linear;
+} 
+
+.projects {
+	width: 96%;
+	max-width: 1320px;
+	margin: 0 auto;
+}
+
+.games h2 {
+	font-size: 30px;
+}
+
+.game {
+	margin: 0px;
+	padding: 20px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+
+.game h2 {
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	font-size: 17px;
+	font-family: Raleway, serif;
+	padding: 10px;
+	margin: 20px 0 0 0;
+	transform: translateY(-100px);
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.game p {
+	font-family: Merriweather, serif;
+	font-style: italic;
+	font-size: 18px;
+	position: relative;
+	padding: 0px 20px 0px;
+	text-align: center;
+	transform: translateY(100px);
+	opacity: 0;
+	transition: all 0.2s linear;
+}
+
+.game a.info {
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px 14px;
+	font-family: Raleway, serif;
+	text-transform: uppercase;
+	box-shadow: 0 0 1px #000;
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+	background: #000;
+	color: #fff;
+}
+
+.google-mask a.info {
+	font-size: 14px;
+}
+
+.game a.info:hover {
+	box-shadow: 0 0 7px #000;
+}
+
+.game:hover img {
+	transform: scale(1.1);
+}
+
+.game:hover .mask {
+	opacity: 1;
+}
+
+.game:hover h2,
+.game:hover p,
+.game:hover a.info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.game:hover p {
+	transition-delay: 0.1s;
+}
+
+.game:hover a.info {
+	transition-delay: 0.2s;
+}
+
+.game h4 {
+	text-align: center;
+	font-size: 25px;
+	margin: 10px;
+}
+
+
+.project {
+	margin: 0 auto;;
+	padding: 0 auto;
+	text-align: center;
+}
+
+.friends-projects {
+	margin: 0 auto;
+	padding: 0 auto;
+	text-align: center;
+}
+
+.feature-projects,
+.games {
+	display: flex;
+	flex-direction: row;
+}
+
+.game .mask {
+	width: 425px;
+	height: 295px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	background-color: rgba(3, 11, 83, 0.61);
+	transition: all 0.4s ease-in-out;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.projects h2 {
+	font-size: 30px;
+}
+
+
+
+
+/* Футер */
+
+
+footer {
+	text-align: center;
+	background: #102146;
+}
+
+footer .social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 120px;
+}
+
+.social i {
+	text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+	transition: all ease-in-out 150ms;
+	padding: 30px;
+	font-size: 35px;
+}
+
+.social a:nth-child(1) {
+	color:  #0088cc;
+}
+
+.social a:nth-child(2) {
+	color: #000;
+}
+
+.social a:nth-child(3) {
+	color: #205081;
+}
+
+.social a:nth-child(4) {
+	color: #12811f;
+}
+
+.social a:nth-child(5) {
+	color: #597da3;
+}
+
+.social i:hover {
+	margin-top: -3px;
+	text-shadow: 0px 14px 10px rgba(2, 2, 2, 0.4);
+}
+
+footer .copyright {
+	margin: 0;
+	padding: 0;
+}
+
+footer .copyright p {
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 20px 0;
+	line-height: 24px;
+	font-size: 13px;
+	color: rgba(255,255,255,.1);
+}
+

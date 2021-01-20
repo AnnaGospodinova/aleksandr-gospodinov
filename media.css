@@ -1,0 +1,218 @@
+@media only screen and (max-width: 1400px) {
+    header {
+        height: 790px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    header {
+        height: 1040px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .feature-projects,
+    .games {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        height: 770px;
+    }
+    header .banner-text h3 {
+        width: 80%;
+    }
+    header .banner-text h1 {
+        font-size: 70px;
+    }
+    .games {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #nav-wrap {
+        font: 12px 'opensans-bold', sans-serif;
+        background: transparent !important;
+        letter-spacing: 1.5px;  
+        width: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+     }
+     #nav-wrap > a {
+         width: 48px;
+          height: 48px;
+          text-align: left;
+          background-color: #102146;
+          position: relative;
+        border: none;
+        float: right;
+  
+        font: 0/0 a;
+        text-shadow: none;
+        color: transparent;
+  
+        position: relative;
+        top: 0px;
+        right: 30px;
+     }
+  
+      #nav-wrap > a:before,
+     #nav-wrap > a:after {
+         position: absolute;
+          border: 2px solid #fff;
+          top: 35%;
+          left: 25%;
+          right: 25%;
+          content: '';
+      }
+     #nav-wrap > a:after { top: 60%; }
+
+      #nav-wrap:not( :target ) > a:first-of-type,
+      #nav-wrap:target > a:last-of-type  {
+         display: block;
+      }
+
+     #nav-wrap ul#nav {
+        height: auto;
+          display: none;
+        clear: both;
+        width: auto; 
+        float: right;     
+  
+        position: relative;
+        top: 12px;
+        right: 0;
+     }
+  
+      #nav-wrap:target > ul#nav	{
+         display: block;
+        padding: 10px;
+        background: #1f2024;
+        margin: 0 30px;
+        clear: both;
+     }
+  
+     ul#nav li {
+        display: block;
+        height: auto;      
+        margin: 0 auto; 
+        padding: 0 4%;           
+        text-align: left;
+        border-bottom: 1px solid #2D2E34;
+        border-bottom-style: dotted; 
+     }
+    
+     ul#nav li a {  
+        display: block;    
+        margin: 0;
+        padding: 0;      
+        margin: 12px 0; 
+        line-height: 16px;
+        border: none;
+     }  
+  
+}
+
+@media only screen and (max-width: 480px) {
+
+    header .banner-text h1 {
+        font-size: 60px;
+        padding-bottom: 20px;
+    }
+
+    header .banner-text h3 {
+        width: 80%;
+    }
+    .game {
+        padding: 5px;
+    }
+    .image-game,
+    .game .mask {
+        width: 300px;
+        height: 200px;  
+    }
+    .social i {
+        font-size: 25px;
+        padding: 15px;
+    }
+    footer .social {
+        height: 70px;
+    }
+    .wrap,
+    .skill {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 375px)  {
+    header {
+        height: 667px;
+    }
+    header .banner-text h1 {
+        font-size: 50px;
+    }
+    header .banner-text h3 {
+        font-size: 18px;
+        letter-spacing: 0px;
+        line-height: 25px;
+        width: 90%;
+    }
+    header .banner {
+        padding-top: 100px;
+    }
+    .wrap {
+        align-items: center;
+    }
+    .wrap .profile-image {
+        width: 50%;
+        padding-top: 20px;
+    }
+    .wrap .information {
+        width: 90%;
+    }
+    #about .contact-details {
+        width: 70%;
+    }
+    #resume .main-col {
+        width: 90%;
+    }
+    .bars .skills {
+        padding-left: 0;
+    }
+    .feature-projects {
+        align-items: center;
+    }
+    .image-game {
+        margin: 0 auto;
+    }
+    .projects h2 {
+        font-size: 25px;
+    }
+    #portfolio .projects h1 {
+        font-size: 35px;
+    }
+    .game .mask {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    .game h2 {
+        margin-top: 3px;
+        font-size: 16px;
+    }
+    .game p {
+        margin-top: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 1;
+    }
+    .game a.info {
+        padding: 2px 5px;
+        font-size: 10px;
+    }
+    
+}
