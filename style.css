@@ -66,31 +66,14 @@ ul#nav li a {
 	transition: color .2s ease-in-out;
 }
 
-.language {
-    position: fixed;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
+.lang {
+	float: right;
+	margin-right: 35px;
+	margin-top: 8px;
 }
 
-.language__img {
-    margin: 2px;
-    cursor: pointer;
-    opacity: .5;
-}
-
-.language__img:hover,
-.language__img_active {
-    opacity: 1;
-}
-
-/* content */
-
-.content {
-    text-align: center;
-    margin: auto;
+.language__img{
+	cursor: pointer;
 }
 
 /* Баннер с именем и описанием */
